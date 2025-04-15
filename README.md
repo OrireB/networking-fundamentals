@@ -8,14 +8,15 @@ This repository contains project for Networking Fundamentals. It covers the OSI 
 A breakdown of all 7 layers of the OSI model, with real-world examples of how each layer operates. 
 
 **What is the OSI model?** 
+
 The OSI (Open Systems Interconnection) model is a 7-layered conceptual framework used to understand how data is transmitted over a network and standardize the functions of communication systems. Below is a brief overview of each layer with real-world example
 The 7 layers of the OSI model:
 
 **1. Physical Layer- Layer 1** 
-_Function:_  This defines the physical connection of transmitting data between devices (hardware). It defines the electrical, mechanical, and procedural aspects of communication. e.g., cables, switches, and electrical signals.
- Real-world example: You connect your laptop to switches or routers using Cables
-(Ethernet cables, fiber optics). It is the physical wires and cables that connect your
-computer to the router or a network switch.
+
+**Function:** This defines the physical connection of transmitting data between devices (hardware). It defines the electrical, mechanical, and procedural aspects of communication. e.g., cables, switches, and electrical signals.
+
+**Real-world example:** You connect your laptop to switches or routers using Cables (Ethernet cables, fiber optics). It is the physical wires and cables that connect your computer to the router or a network switch.
 
 2. Data Link Layer - Layer 2
  Function: This ensures the error-free transfer of data frames between two devices on
