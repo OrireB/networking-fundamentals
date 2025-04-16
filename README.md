@@ -62,15 +62,24 @@ The 7 layers of the OSI model:
 **Requirement:** Divide into 4 subnets
 
 ---
+**The network address:** (IP address): 192.168.1.0
+**The subnet mask:** 255.255.255.0 or /24
+Specify the number of subnets you want to create (e.g., 4 subnets).
+After entering these details, the subnetting calculator will automatically generate the following information:
 
-**New Subnet Mask:** /26 (255.255.255.192)  
-Each subnet can support 62 hosts (2^6 - 2)
+**New subnet mask:** 255.255.255.192 or /26
+**Number of subnets:** 4 subnets
+**Subnet addresses:** The IP addresses that define each of the subnets.
+**Subnet range:** The range of IP addresses available for each subnet.
+Network address and Broadcast address for each subnet.
+For example, the output might look like this:
 
-**Subnets:**
-1. 192.168.10.0/26 — Hosts: 192.168.10.1 to 192.168.10.62  
-2. 192.168.10.64/26 — Hosts: 192.168.10.65 to 192.168.10.126  
-3. 192.168.10.128/26 — Hosts: 192.168.10.129 to 192.168.10.190  
-4. 192.168.10.192/26 — Hosts: 192.168.10.193 to 192.168.10.254  
+**Subnet	Network Address** 	**First IP**	    **Last IP**	    **Broadcast Address**     **Usable IP Range**
+1	192.168.1.0	          192.168.1.1      	192.168.1.62	    192.168.1.63	      192.168.1.1 - 192.168.1.62
+2	192.168.1.64	         192.168.1.65     	192.168.1.126	   192.168.1.127	     192.168.1.65 - 192.168.1.126
+3	192.168.1.128        	192.168.1.129	    192.168.1.190	   192.168.1.191     	192.168.1.129 - 192.168.1.190
+4	192.168.1.192        	192.168.1.193	    192.168.1.254   	192.168.1.255     	192.168.1.193 - 192.168.1.254
+Each subnet has its own network address (starting address), a broadcast address, and a range of usable IP addresses.
 
 ---
 
@@ -84,36 +93,36 @@ Each subnet can support 62 hosts (2^6 - 2)
 
 The TCP/IP model is the foundation for networking on the internet. It has 4 layers:
 
-**Application Layer (HTTP/HTTPS):**  
+- **Application Layer (HTTP/HTTPS):**
 
 This is where communication takes place between applications. If the server wants to get a web page from the server it sends an HTTP request. (e.g., web browsers, email clients).
 
-**Transport Layer (TCP):** 
+- **Transport Layer (TCP):** 
 
 This manages end-to-end communication between application (e.g., TCP, UDP).
 
-**Internet Layer (IP):**  
+- **Internet Layer (IP):**  
 
 This is responsible for routing packets across networks (e.g., IP).
 
-**Network Access Layer (Ethernet/Wi-Fi):**  
+- **Network Access Layer (Ethernet/Wi-Fi):**  
 
 This handles data link protocols and physical transmission (e.g., Ethernet).
 
 **How does TCP/IP work when loading a web page?** 
-1. Application Layer: When you enter a URL (e.g., www.example.com) in your browser, web server processes the request and sends the web page content back to your device.
+**1. Application Layer:** When you enter a URL (e.g., www.example.com) in your browser, web server processes the request and sends the web page content back to your device.
  - The request is formatted according to HTTP protocol.
  - A session is established between your device and the web server.
  - 
-2. Transport Layer: The browser sends HTTP requests to the server using TCP to establish a connection with the server (through a process called a &quot;three-way handshake&quot;).
+**2. Transport Layer:** The browser sends HTTP requests to the server using TCP to establish a connection with the server (through a process called a &quot;three-way handshake&quot;).
  - The request is broken into smaller segments and assigned sequence numbers (TCP).
  - The segments are transmitted to the web server, which reassembles them in the correct order.
  - If a packet is lost or corrupted, TCP will request it to be resent.
- - 
-3. Internet Layer: The request is encapsulated in an IP (Internet Protocol) packet and sent to the server, using routers to find the best route.
+
+**3. Internet Layer:** The request is encapsulated in an IP (Internet Protocol) packet and sent to the server, using routers to find the best route.
  - Each router along the path examines the IP address and forwards the request to the next hop.
- - 
-4. Network Layer: The request is transmitted over the physical network (e.g., Ethernet or Wi-Fi) to
+
+**4. Network Layer:** The request is transmitted over the physical network (e.g., Ethernet or Wi-Fi) to
 reach the server.
  - The data is finally transmitted over the physical medium (e.g., fiber optic cables, Wi-Fi signals) to
 the destination device.
@@ -136,50 +145,3 @@ the destination device.
 
 ---
 
-## 🔧 Tools Used
-
-- Subnetting calculator: [SubnetOnline](https://www.subnetonline.com/pages/subnet-calculators/ip-subnet-calculator.php)
-- Markdown for documentation
-- GitHub for version control and hosting
-
----
-
-## 📥 How to Run
-No executable code – simply read the markdown files for documentation.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Networking Fundamentals
-
-This repository contains the following:
-
-## OSI Model
-- Explanation of the OSI model layers with real-world examples.
-
-## Subnetting
-- Calculations and results of subnetting for the given IP range.
-
-## TCP/IP Analysis
-- Short analysis of how the TCP/IP protocol suite operates across layers in a real-world scenario.
