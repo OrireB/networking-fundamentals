@@ -62,6 +62,7 @@ The 7 layers of the OSI model:
 **Requirement:** Divide into 4 subnets
 
 ---
+
 **The network address:** (IP address): 192.168.1.0
 **The subnet mask:** 255.255.255.0 or /24
 Specify the number of subnets you want to create (e.g., 4 subnets).
@@ -72,13 +73,43 @@ After entering these details, the subnetting calculator will automatically gener
 **Subnet addresses:** The IP addresses that define each of the subnets.
 **Subnet range:** The range of IP addresses available for each subnet.
 Network address and Broadcast address for each subnet.
-For example, the output might look like this:
 
-**Subnet	Network Address** 	**First IP**	    **Last IP**	    **Broadcast Address**     **Usable IP Range**
-1	192.168.1.0	          192.168.1.1      	192.168.1.62	    192.168.1.63	      192.168.1.1 - 192.168.1.62
-2	192.168.1.64	         192.168.1.65     	192.168.1.126	   192.168.1.127	     192.168.1.65 - 192.168.1.126
-3	192.168.1.128        	192.168.1.129	    192.168.1.190	   192.168.1.191     	192.168.1.129 - 192.168.1.190
-4	192.168.1.192        	192.168.1.193	    192.168.1.254   	192.168.1.255     	192.168.1.193 - 192.168.1.254
+
+**Subnet	Network Address**
+
+1.	192.168.1.0
+2.	192.168.1.64
+3.	192.168.1.128
+4.	192.168.1.192
+
+**First IP**
+
+1. 192.168.1.1  
+2. 192.168.1.65
+3, 192.168.1.129	
+4, 192.168.1.193
+
+**Last IP**
+
+1. 192.168.1.62	
+2. 192.168.1.126
+3. 192.168.1.190
+4. 192.168.1.254 
+
+**Broadcast Address**
+
+1. 192.168.1.63
+2. 192.168.1.127
+3. 192.168.1.191
+4. 192.168.1.255
+
+**Usable IP Range**
+
+1. 192.168.1.1 - 192.168.1.62
+2. 192.168.1.65 - 192.168.1.126
+3. 192.168.1.129 - 192.168.1.190
+4. 192.168.1.193 - 192.168.1.254
+
 Each subnet has its own network address (starting address), a broadcast address, and a range of usable IP addresses.
 
 ---
