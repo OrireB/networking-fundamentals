@@ -58,20 +58,27 @@ The 7 layers of the OSI model:
 
 ## 2. Subnetting Calculator Results
 
-**Given IP Range:** 192.168.1.0/24  
+**Given IP Range:** 192.168.1.0/24
+
 **Requirement:** Divide into 4 subnets
 
 ---
 
 **The network address:** (IP address): 192.168.1.0
+
 **The subnet mask:** 255.255.255.0 or /24
+
 Specify the number of subnets you want to create (e.g., 4 subnets).
 After entering these details, the subnetting calculator will automatically generate the following information:
 
 **New subnet mask:** 255.255.255.192 or /26
+
 **Number of subnets:** 4 subnets
+
 **Subnet addresses:** The IP addresses that define each of the subnets.
+
 **Subnet range:** The range of IP addresses available for each subnet.
+
 Network address and Broadcast address for each subnet.
 
 
@@ -86,8 +93,8 @@ Network address and Broadcast address for each subnet.
 
 1. 192.168.1.1  
 2. 192.168.1.65
-3, 192.168.1.129	
-4, 192.168.1.193
+3. 192.168.1.129	
+4. 192.168.1.193
 
 **Last IP**
 
@@ -114,7 +121,8 @@ Each subnet has its own network address (starting address), a broadcast address,
 
 ---
 
-(https://github.com/OrireB/networking-fundamentals/blob/main/Subnetting%20Calculator%20Result.png?raw=true)
+- **Subnetting Calculator Result:**
+  ![Subnetting Calculator Result](https://github.com/OrireB/networking-fundamentals/blob/main/Subnetting%20Calculator%20Result.png?raw=true)
 
 ---
 
